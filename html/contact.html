@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"  />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML5, CSS3, WEB Form, JavaScript" />
+    <meta name="author" content="Bence Jéney" />
+    <meta name="description" content="Simply Web Form" />
+	
+	<!--CSS FILES-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/mainStyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/contactStyle.css">
+
+    <title>Contact | Bence Jéney</title>
+</head>
+
+<body>
+	<div id="container">
+   	  <header>
+    		<nav>
+      			<div id="navigation">
+        			<ul class="navigationUL">
+          				<li class="navigationLI"><a class="navLink" href="../index.html">Home</a></li>
+      					<li class="navigationLI"><a class="navLink" href="portfolio.html">Portfolio</a>
+							<ul class="navigationInnerUL">
+			  					<li class="navigationInnerLI"><a class="navLink" href="portfolio.html#videos">Videography</a></li>
+			  					<li class="navigationInnerLI"><a class="navLink" href="portfolio.html#photos">Photography</a></li>
+			  					<li class="navigationInnerLI"><a class="navLink" href="portfolio.html#design">Design</a></li>
+							</ul>
+      					</li>
+      					<li class="navigationLI"> <a class="navLink" href="mycar.html">My Car</a>
+        					<ul class="navigationInnerUL">
+								<li class="navigationInnerLI"><a class="navLink" href="mycar.html#overview">Overview</a></li>
+								<li class="navigationInnerLI"><a class="navLink" href="mycar.html#photos">Photos</a></li>
+								<li class="navigationInnerLI"><a class="navLink" href="mycar.html#story">Story</a></li>
+								<li class="navigationInnerLI"><a class="navLink" href="mycar.html#plans">Plans</a></li>
+        					</ul>
+      					</li>
+      					<li class="navigationLI"><a class="navLink isActive">Contact</a></li>
+        			</ul>
+      			</div>
+    		</nav>
+		</header>
+   <!-- - - - - - - - - - - - - - - - END OF NAVIGATION - - - - - - - - - - - - - - - - -->
+
+	  <div id="mainDiv">
+		<form action="mailto:jeney.bence.@gmail.com" method="post" name="form" enctype="text/plain">
+			<fieldset>
+			  <legend>Personal information</legend>
+			  <div class="title">
+				<i class="fa fa-user icon"></i>
+				<h3 class="header-ht">
+				  <label for="firstname">First name</label>
+				</h3>
+			  </div>
+			  <input id="firstname" class="input-field" name="firstname" type="text" placeholder="First name"
+				pattern="[A-Za-z]{1,20}" title="Only chacters are allowed" maxlength="20" autofocus required>
+
+			  <br>
+
+			  <div class="title">
+				<i class="fa fa-user icon"></i>
+				<h3 class="header-ht">
+				  <label for="lastname">Last name</label>
+				</h3>
+			  </div>
+			  <input id="lastname" class="input-field" name="lastname" type="text" placeholder="Last name" pattern="[A-Za-z]{1,20}"
+				title="Only characters are allowed" maxlength="20" required>
+
+			  <br>
+
+			  <div class="title">
+				<i class="fa fa-envelope icon"></i>
+				<h3 class="header-ht">
+				  <label for="email">Email address</label>
+				</h3>
+			  </div>
+			  <input id="email" class="input-field" name="email" type="email" placeholder="Email address"
+				pattern="[a-zA-Z0-9._%+-]+@[a-z]{3,10}+\.[a-z]{2,4}$" maxlength="50" required>
+
+			  <br>
+
+			  <div class="title">
+				<i class="fa fa-birthday-cake icon"></i>
+				<h3 class="header-ht">
+				  <label>Date of birth</label>
+				</h3>
+			  </div>
+			  <label for="year"></label>
+			  <select id="year" name="year">
+				<option value="2000">2000</option>
+				<option value="2001">2001</option>
+				<option value="2002">2002</option>
+				<option value="2003">2003</option>
+				<option value="2004">2004</option>
+				<option value="2005">2005</option>
+				<option value="2006">2006</option>
+				<option value="2007">2007</option>
+				<option value="2008">2008</option>
+				<option value="2009">2009</option>
+				<option value="2010" selected>2010</option>
+				<option value="2011">2011</option>
+				<option value="2012">2012</option>
+				<option value="2013">2013</option>
+				<option value="2014">2014</option>
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+				<option value="2020">2020</option>
+			  </select>
+
+			  <label for="month"></label>
+			  <select id="month" name="month">
+				<option value="Jan">Jan</option>
+				<option value="Feb">Feb</option>
+				<option value="Mar">Mar</option>
+				<option value="Apr">Apr</option>
+				<option value="May">May</option>
+				<option value="Jun">Jun</option>
+				<option value="Jul">Jul</option>
+				<option value="Aug">Aug</option>
+				<option value="Sep">Sep</option>
+				<option value="Oct">Oct</option>
+				<option value="Nov">Nov</option>
+				<option value="Dec">Dec</option>
+			  </select>
+
+			  <label for="day"></label>
+			  <select id="day" name="day">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+			  </select>
+
+			  <br>
+			  <br>
+
+			  <div class="title">
+				<i class="fa fa-transgender-alt icon"></i>
+				<h3 class="header-ht">
+				  <label>Gender</label>
+				</h3>
+			  </div>
+			  <input id="male" name="gender" type="radio" value="male">
+			  <label class="radio-btn" for="male">Male</label>
+			  <br>
+			  <input id="female" name="gender" type="radio" value="female">
+			  <label class="radio-btn" for="female">Female</label>
+			  <br>
+			  <input id="other" name="gender" type="radio" value="other">
+			  <label class="radio-btn" for="other">Other</label>
+			  <br>
+			</fieldset>
+
+			<fieldset>
+				<legend>Work</legend>
+			  	<div class="title">
+					<i class="fa fa-comments icon"></i>
+					<h3 class="header-ht"><label>Choose job(s):</label></h3>
+			  	</div>
+			  	<input id="video" name="video" type="checkbox" value="video"><label class="check-box-text" for="video">Video editing</label>
+				<br>
+				<input id="photo" name="photo" type="checkbox" value="photo"><label class="check-box-text" for="photo">Photo editing</label>
+				<br>
+				<input id="design" name="design" type="checkbox" value="design"><label class="check-box-text" for="design">Design</label>
+				<br>
+				<input id="rec" name="rec" type="checkbox" value="rec"><label class="check-box-text" for="rec">Recording/Photography</label>
+				<br>
+				<div class="title">
+					<i class="fa fa-comments icon"></i>
+					<h3 class="header-ht"><label>Project length:</label></h3>
+			  </div>
+			  <input id="once-a-week" name="worktime" type="radio" value="once a week"><label class="radio-btn" for="once-a-week">A week</label>
+			  <br>
+			  <input id="twice-a-week" name="worktime" type="radio" value="twice a week"><label class="radio-btn" for="twice-a-week">A month</label>
+			  <br>
+			  <input id="three-or-more-times" name="worktime" type="radio" value="three or more"><label class="radio-btn" for="three-or-more-times">3-6 months</label>
+			  <br>
+			</fieldset>
+			
+			
+			<fieldset id="message">
+			  <legend>Leave a message</legend>
+			  <div class="title">
+				<i class="fa fa-comments icon"></i>
+				<h3 class="header-ht"><label for="note">Message (optional)</label></h3>
+			  </div>
+			  <textarea id="note" name="note" placeholder="..." maxlength="1024"></textarea>
+			</fieldset>
+			
+			<br>
+
+			<input id="submit-btn" type="submit" value="Submit">
+		  <input id="reset-btn" type="reset" value="Reset">
+	    </form>
+		<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42492.581886400214!2d19.786744487029093!3d48.26848558381726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47400a183f02cd49%3A0x400f7d1c6971220!2s986%2001%20F%C3%BClek!5e0!3m2!1shu!2ssk!4v1588956116796!5m2!1shu!2ssk" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+		<button id="top-btn" title="Go to top">Top</button>
+    </div> <!--end of main div-->
+    <!-- JS FILES -->
+    <script src="../script/slider.js"></script>
+	<br>
+	<br>
+	<footer>
+		<p class="footerText">© Bence Jéney, 2020</p>
+		<a href="mailto:jeney.bence@gmail.com"><img class="rightLogo" src="../img/logo/gmail.png" alt="GMail"/></a>
+		<a href="skype:hassel.bmx"><img class="rightLogo" src="../img/logo/skype.png" alt="Skype"/></a>
+		<a href="https://www.youtube.com/user/HaselDR1FT"><img class="rightLogo" src="../img/logo/youtube.png" alt="YouTube"/></a>
+		<a href="https://www.instagram.com/feliciaboiii/"><img class="rightLogo" src="../img/logo/instagram.png" alt="Instagram"/></a>
+		<a href="https://www.facebook.com/feliciaboiii"><img class="rightLogo" src="../img/logo/facebook.png" alt="Facebook"/></a>
+	</footer>
+	</div>
+</body>
+</html>
